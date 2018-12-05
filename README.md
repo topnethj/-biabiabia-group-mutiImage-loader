@@ -1,1 +1,1 @@
-# -biabiabia-group-mutiImage-loader
+# 仿QQ，微信群组图像。
