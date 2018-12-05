@@ -37,17 +37,15 @@ import java.util.concurrent.TimeUnit;
 import java.util.concurrent.locks.ReentrantLock;
 
 /**
- * @author jyb jyb_96@sina.com on 2017/9/8.
- * @version V1.0
- * @Description: add comment
- * @date 16-4-21 11:21
- * @copyright www.tops001.com
+ * @author hj topnethj@163.com on 2018/12/5.
+ * @version V2.0
+ * @Description: optimize
  */
 
 public class JImageLoader {
-    private static final String Tag = "JImageLoader";
+    public static final String Tag = "JImageLoader";
+    public static final int IMG_URL = R.drawable.ic_launcher;
     private static final int MESSAGE_SEND_RESULT = 100;
-    private static final int IMG_URL = R.drawable.ic_launcher;//只是一个点位id,没有其它作用。
     private static final int CPU_COUNT = 2;
     private static final int CORE_POOL_SIZE = CPU_COUNT + 1; //corePoolSize为CPU数加1
     private static final int MAX_POOL_SIZE = 2 * CPU_COUNT + 1; //maxPoolSize为2倍的CPU数加1
@@ -553,7 +551,7 @@ public class JImageLoader {
         return false;
     }
 
-    public void setTarget(int targetWidth, int targetHight) {
+    public void setTargetWH(int targetWidth, int targetHight) {
         mTargetWidth = targetWidth;
         mTargetHight = targetHight;
     }
