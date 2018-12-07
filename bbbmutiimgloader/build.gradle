@@ -29,7 +29,7 @@ dependencies {
     compile fileTree(include: ['*.jar'], dir: 'libs')
 }
 
-group = "com.topnethj.biabiabia010"
+group = "com.github.biabiabia010"
 
 task sourcesJar(type: Jar) {
     from android.sourceSets.main.java.srcDirs
