@@ -29,8 +29,6 @@ dependencies {
     compile fileTree(include: ['*.jar'], dir: 'libs')
 }
 
-group = "com.github.biabiabia010"
-
 task sourcesJar(type: Jar) {
     from android.sourceSets.main.java.srcDirs
     classifier = 'sources'
